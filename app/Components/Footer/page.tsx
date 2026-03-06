@@ -1,5 +1,5 @@
+'use client'
 import Image from 'next/image'
-import { motion } from "framer-motion";
 import { useTheme } from "../themeContext";
 import { FaGithub } from "react-icons/fa6";
 import { FaWhatsapp } from "react-icons/fa";
