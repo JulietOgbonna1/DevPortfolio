@@ -50,9 +50,9 @@ export default function TechCard({
     </div>
 
 
-    <div className={` container2 block md:hidden ${lightMode ? 'bg-gray-200 border-gray-700' : 'bg-[#16232C]'}  p-6 rounded-xl hover:bg-slate-700 transition text-center w-40 h-full mr-5`}>
+    <div className={` container2 block  md:hidden ${lightMode ? 'bg-gray-200 border-gray-700' : 'bg-[#16232C]'}  p-6 rounded-xl hover:bg-slate-700 transition text-center w-38 h-full `}>
 
-      <div className="flex justify-center mb-4 ">
+      <div className="flex justify-center mb-4">
         <motion.div
           animate={{ y: [0, -6, 0] }}
           transition={{
