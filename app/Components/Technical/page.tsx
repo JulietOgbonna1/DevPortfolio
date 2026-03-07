@@ -20,7 +20,8 @@ export default function Technical() {
   const {lightMode} = useTheme();
   return (
     <section>
-      <>
+      <div className="hidden md:block">
+<>
       <motion.div
         animate={{ y: [0, -12, 0], backgroundPosition: ["0%", "100%", "0%"] }}
         transition={{
@@ -114,6 +115,107 @@ export default function Technical() {
         </motion.div>
 
       </motion.div>
+      </div>
+
+
+
+           <div className="block md:hidden">
+<>
+      <motion.div
+        animate={{ y: [0, -12, 0], backgroundPosition: ["0%", "100%", "0%"] }}
+        transition={{
+          duration: 3,
+          repeat: Infinity,
+          ease: "easeInOut",
+        }}
+        className=" bg-linear-to-r from-white  via-teal-400 to-gray-400 bg-size-[200%_100%] bg-clip-text text-transparent ml-15"
+      >
+      <h2  className={`${lightMode ? 'text-black' : ''} text-3xl font-extrabold inline-block transition-colors duration-300`}>Technical Skills</h2>  
+               <motion.span
+  animate={{ x: [0, 50, 0] }}
+  transition={{
+    duration: 2,
+    repeat: Infinity,
+    ease: "easeInOut",
+  }}
+  className="block absolute left-15 w-20 h-1 bg-[#10B981] mt-2 rounded"
+/>
+      </motion.div>
+      </>
+      
+      <motion.div
+        variants={container}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: true }}
+        className="grid grid-cols-2  gap-6 p-8  mr-4 items-stretch h-full"
+      >
+        <motion.div variants={card}
+          whileHover={{ scale: 1.07, y: -6, boxShadow: "0px 0px 20px rgba(16,185,129,0.6)", borderRadius: '15px' }}
+          transition={{ type: "spring", stiffness: 300, ease: "easeInOut" }}>
+          <TechCard
+            title="React"
+            description="Frontend Library"
+            image="/reacticon.png"
+          />
+        </motion.div>
+
+
+        <motion.div variants={card}
+          whileHover={{ scale: 1.07, y: -6, boxShadow: "0px 0px 20px rgba(16,185,129,0.6)", borderRadius: '15px' }}
+          transition={{ type: "spring", stiffness: 300, ease: "easeInOut" }}>
+          <TechCard
+            title="TypeScript"
+            description="Static Typing"
+            image="/typescriptIcon.png"
+          />
+        </motion.div>
+
+
+        <motion.div variants={card}
+          whileHover={{ scale: 1.07, y: -6, boxShadow: "0px 0px 20px rgba(16,185,129,0.6)", borderRadius: '15px' }}
+          transition={{ type: "spring", stiffness: 300, ease: "easeInOut" }}>
+          <TechCard
+            title="Tailwind CSS"
+            description="CSS Framework"
+            image="/tailwindicon.png"
+          />
+        </motion.div>
+
+        <motion.div variants={card}
+          whileHover={{ scale: 1.07, y: -6, boxShadow: "0px 0px 20px rgba(16,185,129,0.6)", borderRadius: '15px' }}
+          transition={{ type: "spring", stiffness: 300, ease: "easeInOut" }}>
+          <TechCard
+            title="Node.js"
+            description="Runtime"
+            image="/jsIcon.png"
+          />
+        </motion.div>
+
+        <motion.div variants={card}
+          whileHover={{ scale: 1.07, y: -6, boxShadow: "0px 0px 20px rgba(16,185,129,0.6)", borderRadius: '15px' }}
+          transition={{ type: "spring", stiffness: 300, ease: "easeInOut" }}>
+          <TechCard
+            title="PostgreSQL"
+            description="Database"
+            image="/postgreIcon.png"
+          />
+        </motion.div>
+
+
+        <motion.div variants={card}
+          whileHover={{ scale: 1.07, y: -6, boxShadow: "0px 0px 20px rgba(16,185,129,0.6)", borderRadius: '15px' }}
+          transition={{ type: "spring", stiffness: 300, ease: "easeInOut" }}>
+          <TechCard
+            title="AWS"
+            description="Cloud Services"
+            image="/awsicon.png"
+          />
+        </motion.div>
+
+      </motion.div>
+      </div>
+      
     </section>
   );
 }

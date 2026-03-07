@@ -15,7 +15,7 @@ export default function Navbar({ lightMode, toggleTheme }: { lightMode: boolean;
       <nav className="relative z-50">
       
         <ul className="hidden md:flex gap-6 w-full p-5 items-center text-xl pb-20">
-          <li className="flex items-center mr-100 ml-10 hover:scale-150 transition-all">
+          <li className="flex items-center mr-100 @min-xs:mr-80 ml-10 hover:scale-150 transition-all">
             <img src="/logo.png" alt="Logo" />
             DevPortfolio
           </li>
@@ -39,7 +39,7 @@ export default function Navbar({ lightMode, toggleTheme }: { lightMode: boolean;
         </ul>
 
        
-        <div className="flex md:hidden items-center justify-between px-5 py-4 text-xl">
+        <div className="flex md:hidden items-center justify-between px-5 py-4 text-xl ml-4">
           <div className="flex items-center gap-2">
             <img src="/logo.png" alt="Logo" />
             <span>DevPortfolio</span>
