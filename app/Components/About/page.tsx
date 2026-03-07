@@ -100,22 +100,22 @@ const About = () => {
       </motion.div>
       
                     
-                    <p className="text-gray-400 mt-5 mb-4 leading-7">I'm a passionate Full-stack Developer<br /> with over 5 years of 
+                    <p className="text-gray-400 mt-5 mb-4 leading-7 text-sm">I'm a passionate Full-stack Developer<br /> with over 5 years of 
                         experience building<br /> web applications. I love solving complex <br />
                         problems and turning ideas into polished <br /> products.</p>
-                    <p className="text-gray-400 mb-4 leading-7">My approach combines technical excellence <br /> with a strong focus on user 
+                    <p className="text-gray-400 mb-4 leading-7 text-sm">My approach combines technical excellence <br /> with a strong focus on user 
                         experience. I <br />believe that good code is not just about <br /> functionality, but also 
                         about readability, <br />scalability, and performance. When I'm not <br />coding, you'll 
                         find me exploring new UI trends<br /> or contributing to open-source projects.</p>
 
-                    <div className='flex gap-15'>
+                    <div className='flex gap-8'>
                         <div>
-                            <h4 className='text-[#10B981] text-3xl mt-3'>50+ </h4>
-                            <p className="text-gray-500 ">Projects Completed</p>
+                            <h4 className='text-[#10B981] text-2xl mt-3'>50+ </h4>
+                            <p className="text-gray-500 text-sm ">Projects Completed</p>
                         </div>
                         <div>
-                            <h4 className='text-[#10B981] text-3xl mt-3 '>5+ </h4>
-                            <p className="text-gray-500 ">Years Experience</p>
+                            <h4 className='text-[#10B981] text-2xl mt-3 '>5+ </h4>
+                            <p className="text-gray-500 text-sm">Years Experience</p>
                         </div>
                     </div>
                 </div>

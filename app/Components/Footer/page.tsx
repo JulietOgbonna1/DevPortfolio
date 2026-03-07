@@ -29,7 +29,7 @@ const Footer = () => {
           <h2 className='text-xl font-extrabold  hover:text-[#10B981]'>DevPortfolio</h2>
         </div>
          
-        <p className='text-sm text-center text-gray-400 hover:text-white p-2'>© 2026 DevPortfolio. All rights reserved.</p>
+        <p className='text-xs text-center text-gray-400 hover:text-white p-2'>© 2026 DevPortfolio. All rights reserved.</p>
       
       <ul className='flex  justify-center gap-3 text-2xl'>
          

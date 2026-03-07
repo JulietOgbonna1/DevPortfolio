@@ -79,10 +79,10 @@ const Contact = () => {
             className="block absolute  w-20 h-1 bg-[#10B981] mt-2 rounded  left-1/3"
           />
         </motion.div>
-        <p className='text-gray-400 pt-3 pb-10 text-center'>Have a project in mind or just want to say hi? <br />Feel free to reach out!</p>
+        <p className='text-gray-400 pt-3 pb-10 text-center text-sm'>Have a project in mind or just want to say hi? <br />Feel free to reach out!</p>
 
-        <form action="post" className={` ${lightMode ? 'bg-white text-black shadow-2xl border-black' : 'bg-[#16232C] text-white'} flex flex-col gap-3 p-6 rounded-xl hover:bg-slate-700 transition `}>
-          <label htmlFor="name" className='mr-50'>Name</label>
+        <form action="post" className={` ${lightMode ? 'bg-white text-black shadow-2xl border-black' : 'bg-[#16232C] text-white'} flex flex-col gap-2 ml-3 mr-3 max-w-80 p-6 rounded-xl hover:bg-slate-700 transition `}>
+          <label htmlFor="name" >Name</label>
           <input type="text" id="name" name="name" required className={`${lightMode ? 'bg-gray-200 placeholder:text-black' : 'bg-slate-950'}  p-2 border border-gray-600 mt-3 placeholder:text-gray-400  placeholder:text-sm mb-5 transition-colors duration-300`} placeholder='John Doe' />
 
           
